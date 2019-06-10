@@ -76,4 +76,8 @@ class ParticipantesController extends Controller
         // Flash('Se ha eliminado '.$participante->nombre. ' de manera correcta')->error()->important();
         return redirect()->route('participantes.index');
     }
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
 }

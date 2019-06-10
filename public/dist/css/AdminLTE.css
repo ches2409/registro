@@ -3248,7 +3248,10 @@ table.text-center th {
 }
 .login-page,
 .register-page {
-  background: #d2d6de;
+  /* background: #249ed6;
+  background: #43acdc; */
+  /* background: #008ecf; */
+  background: #3c8dbc;
 }
 .login-box,
 .register-box {

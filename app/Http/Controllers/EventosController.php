@@ -56,4 +56,8 @@ class EventosController extends Controller
         // Flash('Se ha eliminado '.$evento->nombre. ' de manera correcta')->error()->important();
         return redirect()->route('eventos.index');
     }
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
 }

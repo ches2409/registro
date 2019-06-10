@@ -56,4 +56,8 @@ class EquiposController extends Controller
         Flash('Se ha eliminado '.$equipo->nombre. ' de manera correcta')->error()->important();
         return redirect()->route('equipos.index');
     }
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
 }

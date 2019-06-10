@@ -60,4 +60,8 @@ class LocalidadesController extends Controller
         // Flash('Se ha eliminado '.$localidad->nombre. ' de manera correcta')->error()->important();
         return redirect()->route('localidades.index');
     }
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
 }
